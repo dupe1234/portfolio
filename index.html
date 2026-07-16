@@ -19,57 +19,13 @@
             min-height: 100vh;
         }
 
-        /* Navigation */
-        nav {
-            background: white;
-            padding: 1.2rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 2px solid #333;
-        }
-
-        nav .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav .logo {
-            color: #2c2c2c;
-            font-weight: 600;
-            font-size: 1.2rem;
-            letter-spacing: 0.5px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2.5rem;
-        }
-
-        nav a {
-            color: #666;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #2c2c2c;
-        }
 
         /* Hero Section */
         .hero {
             background: white;
             color: #2c2c2c;
-            padding: 120px 2rem 80px;
-            margin-top: 60px;
+            padding: 80px 2rem;
+            margin-top: 0;
             border-bottom: 2px solid #333;
         }
 
@@ -357,7 +313,8 @@
         .portfolio-slide img {
             width: 100% !important;
             height: 100% !important;
-            object-fit: cover;
+            object-fit: contain;
+            background: white;
         }
 
         .carousel-bullets {
@@ -420,20 +377,6 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">Pasu Chanchana</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <!-- Hero Section -->
     <div class="hero">
