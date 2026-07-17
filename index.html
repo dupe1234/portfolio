@@ -169,16 +169,47 @@
             font-weight: 500;
         }
 
+        .experience-timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #333;
+        }
+
         .experience-item {
             background: transparent;
-            padding: 2rem 0;
-            border-bottom: 1px solid #555;
-            border-left: none;
-            margin-bottom: 0;
+            padding: 2rem 0 2rem 120px;
+            position: relative;
+            margin-bottom: 2rem;
         }
 
         .experience-item:last-child {
-            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .experience-number {
+            position: absolute;
+            left: 0;
+            top: 2rem;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border: 3px solid #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c2c2c;
         }
 
         .experience-item h3 {
@@ -409,22 +440,27 @@
         <div class="container">
             <h2>Professional Experience</h2>
 
-            <div class="experience-item">
-                <h3>System Analyst</h3>
-                <div class="company">Max Me Corp Company | Present</div>
-                <p>Analyze and manage fleet card system (frontend CMS & backend API). Provide consulting on payment gateway specifications and system requirements to clients.</p>
-            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-number">1</div>
+                    <h3>System Analyst</h3>
+                    <div class="company">Max Me Corp Company | Present</div>
+                    <p>Analyze and manage fleet card system (frontend CMS & backend API). Provide consulting on payment gateway specifications and system requirements to clients.</p>
+                </div>
 
-            <div class="experience-item">
-                <h3>Senior Specialist</h3>
-                <div class="company">Max Solution Service</div>
-                <p>Analyzed and integrated existing systems with client campaigns. Conducted quality assurance on development deliverables (UX/UI, testing). Developed custom websites and APIs to meet specific client requirements.</p>
-            </div>
+                <div class="experience-item">
+                    <div class="experience-number">2</div>
+                    <h3>Senior Specialist</h3>
+                    <div class="company">Max Solution Service</div>
+                    <p>Analyzed and integrated existing systems with client campaigns. Conducted quality assurance on development deliverables (UX/UI, testing). Developed custom websites and APIs to meet specific client requirements.</p>
+                </div>
 
-            <div class="experience-item">
-                <h3>Fullstack Developer</h3>
-                <div class="company">PTG Energy Public Company Limited</div>
-                <p>Developed UX/UI designs and frontend interfaces according to PM specifications. Created robust APIs and backend solutions to meet project requirements.</p>
+                <div class="experience-item">
+                    <div class="experience-number">3</div>
+                    <h3>Fullstack Developer</h3>
+                    <div class="company">PTG Energy Public Company Limited</div>
+                    <p>Developed UX/UI designs and frontend interfaces according to PM specifications. Created robust APIs and backend solutions to meet project requirements.</p>
+                </div>
             </div>
         </div>
     </section>
